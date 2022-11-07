@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book</title>
+    <link rel="stylesheet" href="dis.css">
+    <script src="https://kit.fontawesome.com/b0f29e9bfe.js" crossorigin="anonymous"></script>
+    <script defer src="api.js"></script>
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+		<source src="video2.mp4" type="video/mp4">
+	  </video>
+    <div class="topnav">
+		<a href="main.html">Search</a>
+		<a href="index.html">Memo</a>
+	</div>
+    
+    <button id="prev-btn">
+        <i class="fas fa-arrow-circle-left"></i>
+    </button>
+
+    <!-- The Book -->
+    <div id="book" class="book">
+        <!-- Paper 1 -->
+        <div id="p1" class="paper">
+            <div class="front">
+                <div id="f1" class="front-content">
+                    <h1 class="book-title">Recipe</h1>
+                    <img class="cover-img" src="cookbook.jpg">
+                </div>
+            </div>
+            <div class="back">
+                <div id="b1" class="back-content">
+                    <h2>Meal name</h2>
+                    <div class="content">
+                        <h3 id="dis3"></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Paper 2 -->
+        <div id="p2" class="paper">
+            <div class="front">
+                <div id="f2" class="front-content">
+                    <h2>Food Origin</h2>
+                    <h3 id="dis"></h3>
+                </div>
+            </div>
+            <div class="back">
+                <div id="b2" class="back-content">
+                    <h2>Food category</h2>
+                    <h3 id="dis2"></h3>
+                </div>
+            </div>
+        </div>
+        <!-- Paper 3 -->
+        <div id="p3" class="paper">
+            <div class="front">
+                <div id="f3" class="front-content">
+                    <h2>Ingredients</h2>
+                    <table id="table">
+                        <tr>
+                            <th>Ingredient</th>
+                            <th>measurement</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="back">
+                <div id="b3" class="back-content">
+                    <h2>Instruction</h2>
+                    <p id="dis4"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button id="next-btn">
+        <i class="fas fa-arrow-circle-right"></i>
+    </button>
+    <div>
+        <img class="img1" height="200px" width="230px" src="MasterFood-removebg-preview.png" alt="">
+      </div>
+
+
+</body>
+</html>
